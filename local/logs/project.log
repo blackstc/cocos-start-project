@@ -69,3 +69,62 @@
 2017-06-16T17:31:42.138Z - normal: Compiled project javascript file successfully
 2017-06-16T17:31:47.241Z - normal: Compiled project javascript file successfully
 2017-06-16T17:32:40.059Z - normal: Compiled project javascript file successfully
+2017-06-16T17:39:32.362Z - normal: Compiled project javascript file successfully
+2017-06-16T17:39:38.265Z - normal: Compiled project javascript file successfully
+2017-06-16T17:40:17.009Z - normal: Compiled project javascript file successfully
+2017-06-16T17:41:40.060Z - normal: Compiled project javascript file successfully
+2017-06-16T17:41:54.365Z - normal: Compiled project javascript file successfully
+2017-06-16T17:42:06.514Z - normal: Compiled project javascript file successfully
+2017-06-16T17:44:07.605Z - normal: Compiled project javascript file successfully
+2017-06-16T17:44:27.406Z - normal: Compiled project javascript file successfully
+2017-06-16T17:44:40.658Z - normal: Compiled project javascript file successfully
+2017-06-16T17:44:47.766Z - normal: Compiled project javascript file successfully
+2017-06-16T17:44:59.466Z - normal: Compiled project javascript file successfully
+2017-06-16T17:54:49.006Z - normal: Compiled project javascript file successfully
+2017-06-16T17:54:58.745Z - normal: Compiled project javascript file successfully
+2017-06-16T17:55:01.116Z - normal: Compiled project javascript file successfully
+2017-06-16T17:55:21.392Z - normal: Compiled project javascript file successfully
+2017-06-16T17:55:47.753Z - normal: Compiled project javascript file successfully
+2017-06-16T17:59:41.814Z - normal: Compiled project javascript file successfully
+2017-06-16T17:59:45.804Z - normal: Compiled project javascript file successfully
+2017-06-16T18:00:14.699Z - normal: Compiled project javascript file successfully
+2017-06-16T18:00:48.424Z - error: Failed to update asset db://assets/scripts/Game.js, messages: Compile error: SyntaxError: unknown: Unexpected token, expected , (74:4)
+  72 |     }
+  73 |     // called every frame, uncomment this function to activate update callback
+> 74 |     update: function (dt) {
+     |     ^
+  75 |         // update timer for each frame, when a new star is not generated after exceeding duration
+  76 |         // invoke the logic of game failure
+  77 |         if (this.timer > this.starDuration) {
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4443:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1755:8)
+    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1743:33)
+    at Parser.pp$3.parseObj (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3968:12)
+    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3709:19)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3484:19)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3464:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3394:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3371:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3334:19)
+    at s.AssetDB.error (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/utils.js:1:2582)
+    at Object.callback (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/interface.js:1:5731)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:906:35
+    at _arrayEach (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:85:13)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:898:17
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:44:16
+    at s.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/index.js:1:1683)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:22642
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:52:16
+2017-06-16T18:00:52.989Z - normal: Compiled project javascript file successfully
+2017-06-16T18:01:05.682Z - normal: Compiled project javascript file successfully
+2017-06-16T18:01:22.875Z - normal: Compiled project javascript file successfully
+2017-06-16T18:04:29.120Z - normal: connected!
+2017-06-16T18:04:29.496Z - normal: 1.5.0
+2017-06-16T18:06:55.001Z - normal: Compiled project javascript file successfully
+2017-06-16T18:07:22.488Z - normal: Compiled project javascript file successfully
+2017-06-16T18:10:15.042Z - normal: Compiled project javascript file successfully
+2017-06-16T18:11:05.924Z - normal: Compiled project javascript file successfully
+2017-06-16T18:12:08.857Z - normal: Compiled project javascript file successfully
+2017-06-16T18:12:32.352Z - normal: Compiled project javascript file successfully
+2017-06-16T18:14:20.203Z - normal: Compiled project javascript file successfully
+2017-06-16T18:14:29.776Z - normal: Compiled project javascript file successfully

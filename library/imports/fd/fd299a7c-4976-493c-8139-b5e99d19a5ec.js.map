@@ -10,11 +10,33 @@
     "Component",
     "properties",
     "pickRadius",
-    "onLoad"
+    "getPlayerDistance",
+    "playerPos",
+    "game",
+    "player",
+    "getPosition",
+    "dist",
+    "pDistance",
+    "node",
+    "position",
+    "onPicked",
+    "spawnNewStar",
+    "gainScore",
+    "destroy",
+    "onLoad",
+    "update",
+    "dt",
+    "opacityRatio",
+    "timer",
+    "starDuration",
+    "minOpacity",
+    "opacity",
+    "Math",
+    "floor"
   ],
-  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,oBAAY;AADJ,KAHP;;AAOL;AACAC,YAAQ,kBAAY,CAEnB;;AAVI,CAAT",
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,oBAAY;AADJ,KAHP;;AAOLC,uBAAmB,6BAAY;AAC3B;AACA,YAAIC,YAAY,KAAKC,IAAL,CAAUC,MAAV,CAAiBC,WAAjB,EAAhB;AACA;AACA,YAAIC,OAAOX,GAAGY,SAAH,CAAa,KAAKC,IAAL,CAAUC,QAAvB,EAAiCP,SAAjC,CAAX;AACA,eAAOI,IAAP;AACH,KAbI;;AAeLI,cAAU,oBAAW;AACjB;AACA,aAAKP,IAAL,CAAUQ,YAAV;AACA;AACA,aAAKR,IAAL,CAAUS,SAAV;AACA;AACA,aAAKJ,IAAL,CAAUK,OAAV;AACH,KAtBI;;AAwBL;AACAC,YAAQ,kBAAY,CAEnB,CA3BI;;AA6BL;AACAC,YAAQ,gBAAUC,EAAV,EAAc;AAClB;AACA,YAAI,KAAKf,iBAAL,KAA2B,KAAKD,UAApC,EAAgD;AAC5C;AACA,iBAAKU,QAAL;AACA;AACH;AACD;AACA,YAAIO,eAAe,IAAI,KAAKd,IAAL,CAAUe,KAAV,GAAgB,KAAKf,IAAL,CAAUgB,YAAjD;AACA,YAAIC,aAAa,EAAjB;AACA,aAAKZ,IAAL,CAAUa,OAAV,GAAoBD,aAAaE,KAAKC,KAAL,CAAWN,gBAAgB,MAAMG,UAAtB,CAAX,CAAjC;AACH;AAzCI,CAAT",
   "file": "unknown",
   "sourcesContent": [
-    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        pickRadius: 0\n    },\n\n    // use this for initialization\n    onLoad: function () {\n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        pickRadius: 0\n    },\n    \n    getPlayerDistance: function () {\n        // judge the distance according to the position of the player node\n        var playerPos = this.game.player.getPosition();\n        // calculate the distance between two nodes according to their positions\n        var dist = cc.pDistance(this.node.position, playerPos);\n        return dist;\n    },\n    \n    onPicked: function() {\n        // When the stars are being collected, invoke the interface in the Game script to generate a new star\n        this.game.spawnNewStar();\n        // invoke the scoring method of the Game script\n        this.game.gainScore();\n        // then destroy the current star's node\n        this.node.destroy();\n    },\n    \n    // use this for initialization\n    onLoad: function () {\n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    update: function (dt) {\n        // judge if the distance between the star and main character is shorter than the collecting distance for each frame\n        if (this.getPlayerDistance() < this.pickRadius) {\n            // invoke collecting behavior\n            this.onPicked();\n            return;\n        }\n        // update the transparency of the star according to the timer in the Game script\n        var opacityRatio = 1 - this.game.timer/this.game.starDuration;\n        var minOpacity = 50;\n        this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));\n    },\n});\n"
   ]
 }
