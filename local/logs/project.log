@@ -1,0 +1,71 @@
+2017-06-16T16:52:56.088Z - normal: Load ~/.CocosCreator/settings.json
+2017-06-16T16:52:56.091Z - normal: checking language setting...
+2017-06-16T16:52:56.092Z - normal: Language: en
+2017-06-16T16:52:56.350Z - success: protocol editor-framework registered
+2017-06-16T16:52:56.350Z - success: protocol app registered
+2017-06-16T16:52:56.350Z - success: protocol theme registered
+2017-06-16T16:52:56.350Z - success: protocol profile registered
+2017-06-16T16:52:56.351Z - success: protocol packages registered
+2017-06-16T16:52:56.353Z - success: protocol unpack registerred
+2017-06-16T16:52:56.353Z - success: protocol disable-commonjs registerred
+2017-06-16T16:52:57.881Z - normal: connected!
+2017-06-16T16:52:57.884Z - normal: Check project /Users/cblackstock/Downloads/start_project
+2017-06-16T16:52:57.886Z - normal: Initializing Cocos2d
+2017-06-16T16:52:58.004Z - normal: Initializing Asset Database
+2017-06-16T16:52:58.022Z - success: protocol uuid registerred
+2017-06-16T16:52:58.023Z - success: protocol db registerred
+2017-06-16T16:52:58.023Z - success: protocol thumbnail registerred
+2017-06-16T16:52:58.023Z - normal: Loading editor/builtin packages
+2017-06-16T16:52:58.036Z - success: anysdk loaded
+2017-06-16T16:52:58.138Z - success: assets loaded
+2017-06-16T16:52:58.140Z - success: builder loaded
+2017-06-16T16:52:58.143Z - success: hierarchy loaded
+2017-06-16T16:52:58.146Z - success: inspector loaded
+2017-06-16T16:52:58.147Z - success: keystore loaded
+2017-06-16T16:52:58.150Z - success: node-library loaded
+2017-06-16T16:52:58.151Z - success: package-asset loaded
+2017-06-16T16:52:58.152Z - success: preferences loaded
+2017-06-16T16:52:58.162Z - success: project-importer loaded
+2017-06-16T16:52:58.164Z - success: project-settings loaded
+2017-06-16T16:52:58.167Z - success: ui-kit loaded
+2017-06-16T16:52:58.170Z - success: ui-grid loaded
+2017-06-16T16:52:58.173Z - success: scene loaded
+2017-06-16T16:52:58.174Z - success: sprite-editor loaded
+2017-06-16T16:52:58.177Z - success: store loaded
+2017-06-16T16:52:58.180Z - success: timeline loaded
+2017-06-16T16:52:58.181Z - normal: Loading builtin packages
+2017-06-16T16:52:58.184Z - success: asset-db-debugger loaded
+2017-06-16T16:52:58.185Z - success: code-editor loaded
+2017-06-16T16:52:58.186Z - success: color-picker loaded
+2017-06-16T16:52:58.189Z - success: console loaded
+2017-06-16T16:52:58.192Z - success: package-manager loaded
+2017-06-16T16:52:58.198Z - success: sdkbox loaded
+2017-06-16T16:52:58.201Z - success: tester loaded
+2017-06-16T16:52:58.204Z - success: ui-kit-preview-extra loaded
+2017-06-16T16:52:58.207Z - success: ui-kit-preview loaded
+2017-06-16T16:52:58.210Z - success: ui-tree loaded
+2017-06-16T16:52:58.241Z - normal: Initializing project /Users/cblackstock/Downloads/start_project
+2017-06-16T16:52:58.242Z - warn: Profile profile://local/local.json warning: reset profile field: last-edit
+2017-06-16T16:52:58.243Z - normal: Loading packages
+2017-06-16T16:52:58.247Z - normal: Watching packages
+2017-06-16T16:52:58.258Z - normal: Run Application
+2017-06-16T16:52:58.470Z - success: preview server running at http://localhost:7456
+2017-06-16T16:53:01.308Z - normal: 1.5.0
+2017-06-16T17:11:41.789Z - normal: Compiled project javascript file successfully
+2017-06-16T17:12:56.664Z - normal: Compiled project javascript file successfully
+2017-06-16T17:15:25.775Z - normal: Compiled project javascript file successfully
+2017-06-16T17:17:35.610Z - failed: Failed to drop asset a00f7084-6795-4d28-8fdb-f52a2f6432aa, message: Error: Can not find a component in the script "a00f7084-6795-4d28-8fdb-f52a2f6432aa.json".
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils.js:1:803
+    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCAssetLibrary.js:118:25
+    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5795)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:201:7)
+2017-06-16T17:18:12.218Z - normal: Compiled project javascript file successfully
+2017-06-16T17:20:19.310Z - normal: Compiled project javascript file successfully
+2017-06-16T17:21:17.640Z - normal: Compiled project javascript file successfully
+2017-06-16T17:25:05.465Z - normal: Compiled project javascript file successfully
+2017-06-16T17:26:40.182Z - normal: Compiled project javascript file successfully
+2017-06-16T17:27:09.004Z - normal: Compiled project javascript file successfully
+2017-06-16T17:31:42.138Z - normal: Compiled project javascript file successfully
+2017-06-16T17:31:47.241Z - normal: Compiled project javascript file successfully
+2017-06-16T17:32:40.059Z - normal: Compiled project javascript file successfully
